@@ -33,3 +33,27 @@ for( i=0 ; i< sentence.length ; i ++)
 // there is no else statement 
 }
 console.log("No of 'e' in the sentence is " +countE);
+
+
+/*
+Practice 3) Combine the three arrays into a single array:
+*/
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const array3 = [7, 8, 9];
+const newArray = [...array1, ...array2, ...array3];
+console.log(newArray);
+
+// const newArray = [...array1 + ...array2 + ...array3]; - Error
+// the below 2 shows array as [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]
+// const newArray = [array1, array2, array3];
+// const newArray = [array1 + array2 + array3];
+
+
+/*
+Practice 4) what method can we use to permanently remove the leter "f" at index 3.
+*/
+const alphabet = ["a", "b", "c", "f", "d", "e"];
+alphabet.splice(3,1);
+console.log (alphabet);
+// Rssult is [ 'a', 'b', 'c', 'd', 'e' ] on using slice

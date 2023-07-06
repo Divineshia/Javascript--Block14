@@ -1,6 +1,6 @@
 
 // pizza toppings
-let toppings=[]
+let toppings=[ ]
 
 
 
